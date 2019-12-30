@@ -174,7 +174,7 @@ describe('BookComponent', () => {
   });
 
   it('trackByFunction', () => {
-    const results = component.trackByFunction(1, booksItem[0]);
+    const results = component.trackByFunction(booksItem[0]);
     expect(results).toEqual(booksItem[0].link);
   });
 });
