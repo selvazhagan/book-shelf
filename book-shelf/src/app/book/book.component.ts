@@ -72,6 +72,10 @@ export class BookComponent implements OnInit {
     });
   }
 
+  trackByFunction(index: number, bookItem: Book) {
+    return bookItem.link;
+  }
+
   sortByName(book1, book2) {
     if (book2.author > book1.author) {
       return -1;

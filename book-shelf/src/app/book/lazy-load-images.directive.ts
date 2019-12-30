@@ -32,8 +32,6 @@ export class LazyLoadImagesDirective implements AfterViewInit {
         }
       });
     });
-    console.log(this.el.nativeElement);
-    console.log('********7');
     obs.observe(this.el.nativeElement);
   }
 

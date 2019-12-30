@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PagenotfoundComponent } from './core/components/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'book-shelf',
     loadChildren: () => import('./book/book.module').then(m => m.BookModule),
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent,
   },
 ];
 

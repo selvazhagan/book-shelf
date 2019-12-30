@@ -44,6 +44,7 @@ $ ng test --code-coverage
 9. To improve the performance, once sorted added the value to object and will fetch the value from object instead of computing sorting.
 10. Updated backend Service with cors.
 11. Added proxy as Backend server and angular application will be in diff port locally.
+12. Implemented trackByFunction for booksitems in book component based on link assuming it will be unique foer everybook Or if we update backend server response add id for every item, we can use item id
 
 ## Technologies Stack
 

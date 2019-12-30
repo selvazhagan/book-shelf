@@ -18,6 +18,7 @@
 <div
   class="modal modal--align"
   [ngClass]="{ 'modal--show': popUpOpen === true }"
+  *ngIf="popUpOpen"
 >
   <div class="modal__container">
     <a

@@ -40,3 +40,5 @@ $ npm start
 ```
 
 The console will display a message with the port of the server.
+
+ng build --prod --base-href https://selvazhagan.github.io/book-shelf/book-shelf

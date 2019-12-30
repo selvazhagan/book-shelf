@@ -172,4 +172,9 @@ describe('BookComponent', () => {
     component.filterbyPages(123);
     expect(component.filterPageNumber).toEqual(123);
   });
+
+  it('trackByFunction', () => {
+    const results = component.trackByFunction(1, booksItem[0]);
+    expect(results).toEqual(booksItem[0].link);
+  });
 });

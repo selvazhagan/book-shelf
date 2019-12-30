@@ -12,7 +12,7 @@ export class BooksService {
   fetchBooks(): Observable<Book[]> {
     /* return this.http.get<Book[]>(
       'http://localhost:3000/api/books.json',
-    ) as Observable<Book[]>;*/
+    ) as Observable<Book[]>; */
 
     return of([
       {

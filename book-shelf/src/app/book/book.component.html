@@ -11,7 +11,9 @@
           <li
             class="item"
             *ngFor="
-              let bookitem of bookItems | bookFilter: filterPageNumber:'pages'
+              let bookitem of bookItems;
+              index as i;
+              trackBy: trackByFunction | bookFilter: filterPageNumber:'pages'
             "
           >
             <app-book-item [bookitem]="bookitem"></app-book-item>
