@@ -72,7 +72,7 @@ export class BookComponent implements OnInit {
     });
   }
 
-  trackByFunction(bookItem: Book): any {
+  trackByFunction(index, bookItem: Book): any {
     return bookItem.link;
   }
 
